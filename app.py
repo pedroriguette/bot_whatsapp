@@ -33,6 +33,6 @@ for coluna in customers_page.iter_rows(min_row=2):
             sleep(5)
         except:
             print(f'não foi possivel enviar a mensagem para {name}')
-            with open('erros.csv', 'a',newline='',encoding='utf-8') as arquivo:
-                arquivo.write(f'NOME: {name}, NUMERO{number_phone}')
+            with open('erros.csv', 'a',newline='',encoding='utf-8') as doc:
+                doc.write(f'NOME: {name}, NUMERO{number_phone}')
             
